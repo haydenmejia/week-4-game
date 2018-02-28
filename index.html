@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Crystal Game</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm"
+        crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="./assets/javascript/game.js"></script>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <a class="navbar-brand" href="#">Crystal Collector</a>
+        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNavAltMarkup" aria-controls="navbarNavAltMarkup"
+            aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarNavAltMarkup">
+            <div class="navbar-nav">
+            </div>
+        </div>
+    </nav>
+    <br>
+    <div class="card" style="width: 750px; background-color:green; color: white; margin-left: 25%;">
+        <div class="card-body">
+            <p class="card-text" style="text-align: center;">INSTRUCTIONS</p>
+            <p class="card-text">1. You will be given a random number at the start of the game.</p>
+            <p class="card-text">2. There are four crystals below. By clicking on a button you will add a specific amount of points to your total
+                score.</p>
+            <p class="card-text">3. You win the game by matching your total score to a random number, you lose the game if your total score goes
+                above the random number.</p>
+            <p class="card-text">4. The value of each crytal is hidden from you until you click on the button.</p>
+            <p class="card-text">5. Each time when the game starts, the game will change the value of each crystal.</p>
+        </div>
+    </div>
+    <div class="d-flex p-2">
+        <button type="button" class="btn btn-primary" style="background-color: black; border: black;">
+            Wins
+            <span class="badge badge-light" id="wins"></span>
+        </button>
+        <button type="button" class="btn btn-primary" style="background-color: black; border: black; margin-left: 2%;">
+            Loses
+            <span class="badge badge-light" id="loses"></span>
+        </button>
+        <button type="button" class="btn btn-primary" style="background-color: black; border: black; margin-left: 3%;">
+            Score
+            <span class="badge badge-light" id="score"></span>
+        </button>
+        <br>
+        <button type="button" class="btn btn-primary" style="background-color: red; border: red; margin-left: 60%;">
+            Random Number
+            <span class="badge badge-light" id="randomNumber"></span>
+        </button>
+    </div>
+    <br>
+    <div class="card" style="width: 18rem; float: left; margin-left: 75px;  border: solid 2px red;">
+        <img class="card-img-top" src="./assets/images/RedCrystal.jpg" alt="Card image cap" style="height: 150px; width: 150px;">
+        <div class="card-body">
+            <h5 class="card-title">Red Crystal</h5>
+            <button class="btn btn-primary" style="background-color: red; border: red;" id="redButton">Play</button>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem; float: left; margin-left: 75px; border: solid 2px blue;">
+        <img class="card-img-top" src="./assets/images/BlueCrystal.jpg" alt="Card image cap" style="height: 150px; width: 150px;">
+        <div class="card-body">
+            <h5 class="card-title">Blue Crystal</h5>
+            <button class="btn btn-primary" style="background-color: Blue; border: blue;" id="blueButton">Play</button>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem; float: left; margin-left: 75px;  border: solid 2px gold;">
+        <img class="card-img-top" src="./assets/images/YellowCrystal.jpg" alt="Card image cap" style="height: 150px; width: 150px;">
+        <div class="card-body">
+            <h5 class="card-title">Yellow Crystal</h5>
+            <button class="btn btn-primary" style="background-color:gold; border:gold;" id="yellowButton">Play</button>
+        </div>
+    </div>
+    <div class="card" style="width: 18rem; float: left; margin-left: 75px;  border: solid 2px green;">
+        <img class="card-img-top" src="./assets/images/Green Crystal.png" alt="Card image cap" style="height: 150px; width: 150px;">
+        <div class="card-body">
+            <h5 class="card-title">Green Crystal</h5>
+            <button class="btn btn-primary" style="background-color: green; border: green;" id="greenButton">Play</button>
+        </div>
+    </div>
+</body>
+
+</html>
