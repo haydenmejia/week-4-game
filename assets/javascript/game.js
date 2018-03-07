@@ -36,7 +36,7 @@ $(document).ready(function() {
             var gem2 = randomNumberFromRange( minGuess, maxGuess);
             var gem3 = randomNumberFromRange( minGuess, maxGuess);
             var gem4 = randomNumberFromRange( minGuess, maxGuess);
-        } else if (score === randomGen) {
+        } else if (score === randomNumber) {
             alert('You Win!');
             score = 0;
             $('#score').text(score);
